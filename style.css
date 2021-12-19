@@ -1,0 +1,45 @@
+body {
+   font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "Garamond", serif;
+   padding: 2.5% 7.5%;
+   color: #000033;
+}
+
+a:link {
+   color: #C8102E;
+}
+
+a:visited {
+   color: #7C2529;
+}
+
+a:hover {
+   color: #F1BE48;
+}
+
+dt {
+   margin-top: 0.25em;
+   padding-left: 2em;
+   text-indent: -2em;
+}
+
+dd {
+   margin-bottom: 0.25em;
+}
+
+ul.navbar {
+   text-align: center;
+}
+
+ul.navbar li {
+   padding: 0% 8%;
+   list-style: none;
+   display: inline-block;
+   font-size: 150%;
+}
+
+span {
+   float: right;
+   font-size: 125%;
+   padding-left: 2em;
+   padding-bottom: 1em;
+}
