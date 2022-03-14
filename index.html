@@ -1,259 +1,80 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html>
 <head>
-	<title>Upcoming Courses • Department of Political Science • Iowa State University</title>
-	<link href="https://cdn.theme.iastate.edu/nimbus-sans/css/nimbus-sans.css" rel="stylesheet">
-	<link href="https://cdn.theme.iastate.edu/merriweather/css/merriweather.css" rel="stylesheet">
-	<link href="https://cdn.theme.iastate.edu/font-awesome/css/font-awesome.css" rel="stylesheet">
-	<link href="https://www.pols.iastate.edu/wp-content/themes/iastatetheme/vendor/iastate-theme/php/public/css/iastate.min.css?v=2.0.12" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, noarchive">
+<title>Urbatsch: Home</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-18351221-2']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
 </head>
-<style>
-input[type="radio"] {
- position: absolute;
- left: -9999px;
-}
-
-:root {
- --black: #222;
- --white: #fff;
- --red: #600000;
- --gold: #f1be48;
-}
- 
-.filters {
- text-align: left;
- margin-bottom: 1rem;
-}
- 
-.filters * {
- display: inline-block;
-}
- 
-.filters label {
- padding: 0.5rem 1rem;
- margin-bottom: 0.25rem;
- border-radius: 2rem;
- min-width: 50px;
- line-height: normal;
- cursor: pointer;
- transition: all 0.1s;
-}
- 
-.filters label:hover {
- background: var(--gold);
- color: var(--black);
-}
-
-[value="All"]:checked ~ .posts [data-category] {
- display: block;
-}
-
-[value="Law"]:checked ~ .courses .course:not([data-category~="Law"]),
-[value="American"]:checked ~ .courses .course:not([data-category~="American"]),
-[value="Comparative"]:checked ~ .courses .course:not([data-category~="Comparative"]),
-[value="IR"]:checked ~ .courses .course:not([data-category~="IR"]),
-[value="Policy"]:checked ~ .courses .course:not([data-category~="Policy"]),
-[value="Diversity"]:checked ~ .courses .course:not([data-category~="Diversity"]),
-[value="Perspectives"]:checked ~ .courses .course:not([data-category~="Perspectives"]),
-[value="MWF"]:checked ~ .courses .course:not([data-category~="MWF"]),
-[value="MW"]:checked ~ .courses .course:not([data-category~="MW"]),
-[value="TR"]:checked ~ .courses .course:not([data-category~="TR"]),
-[value="asynch"]:checked ~ .courses .course:not([data-category~="asynch"]) {
- display: none;
-}
-
-.courses .course:not([data-category~="F22"]) {
- display: none;
-}
-
-[value="All"]:checked ~ .filters [for="All"],
-[value="Law"]:checked ~ .filters [for="Law"],
-[value="American"]:checked ~ .filters [for="American"],
-[value="Comparative"]:checked ~ .filters [for="Comparative"],
-[value="IR"]:checked ~ .filters [for="IR"],
-[value="Policy"]:checked ~ .filters [for="Policy"],
-[value="Diversity"]:checked ~ .filters [for="Diversity"],
-[value="Perspectives"]:checked ~ .filters [for="Perspectives"],
-[value="MWF"]:checked ~ .filters [for="MWF"],
-[value="MW"]:checked ~ .filters [for="MW"],
-[value="TR"]:checked ~ .filters [for="TR"],
-[value="asynch"]:checked ~ .filters [for="asynch"] {
- background: var(--red);
- color: var(--white);
-}
-
-.courses {
- display: grid;
- grid-gap: 1rem;
- gap: 1rem;
- grid-template-columns: repeat(2, 1fr);
- padding: 0rem 1rem;
-}
-
-.courses .course {
- background: var(--red);
- color: var(--white);
- list-style-type: none;
-}
-
-.courses a {
- color: var(--gold);
-}
-
-.courses table {
- margin-bottom: 0px;
- width: 100%;
-}
-
-.courses th {
- width: min(150px, 20vw);
-}
-
-.courses img {
- max-width: 100%;
-}
-
-@media screen and (max-width: 1024px) {
- .courses {
-  grid-template-columns: repeat(1, 1fr);
- }
-}
-
-ol {
- padding-left: 0px;
-}
-</style>
-
 <body>
-<h2>Upcoming Courses</h2>
 
-<p>To help you plan your course schedule, here are the undergraduate Political Science courses we tentatively anticipate offering in Fall 2022, though keep in mind that these plans are very much subject to change. Please contact <a href="mailto:polsci@iastate.edu">the department</a> or the specific course's instructor with any questions.</p>
 
-<input type="radio" id="All" name="categories" value="All" checked>
-<input type="radio" id="Law" name="categories" value="Law">
-<input type="radio" id="American" name="categories" value="American">
-<input type="radio" id="Comparative" name="categories" value="Comparative">
-<input type="radio" id="IR" name="categories" value="IR">
-<input type="radio" id="Policy" name="categories" value="Policy">
-<input type="radio" id="Diversity" name="categories" value="Diversity">
-<input type="radio" id="Perspectives" name="categories" value="Perspectives">
-<input type="radio" id="MWF" name="categories" value="MWF">
-<input type="radio" id="MW" name="categories" value="MW">
-<input type="radio" id="TR" name="categories" value="TR">
-<input type="radio" id="asynch" name="categories" value="asynch">
 
-<ol class="filters">Display
- <li>
-  <label for="All">All Courses</label>
- </li>
-</ol>
-<ol class="filters">
- <li>or filter by subfield:
-  <label for="Law">Law &amp; Theory</label>
- </li>
- <li>
-  <label for="American">American Politics</label>
- </li>
- <li>
-  <label for="Comparative">Comparative Politics</label>
- </li>
- <li>
-  <label for="IR">International Relations</label>
- </li>
- <li>
-  <label for="Policy">Public Policy</label>
- </li>
-</ol>
-<ol class="filters">
- <li>or filter by graduation requirement:
-  <label for="Diversity">U.S. Diversity</label>
- </li>
- <li>
-  <label for="Perspectives">International Perspectives</label>
- </li>
-</ol>
-<ol class="filters">
- <li>or filter by schedule:
-  <label for="MWF">Monday/Wednesday/Friday</label>
- </li>
- <li>
-  <label for="MW">Monday/Wednesday</label>
- </li>
- <li>
-  <label for="TR">Tuesday/Thursday</label>
- </li>
- <li>
-  <label for="asynch">Online</label>
- </li>
-</ol>
+<div id="navbar">
 
-<ol class="courses">
- <li class="course" data-category="F22 MWF"><table><th><img src="101.png" alt="Pol S 101"></th><td><h4>Pol S 101: Introduction to Political Science</h4><p><i><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; MWF 1:10&ndash;2:00</i></p><p>Find out what political science is all about, and develop the skills needed to start making sense of what happens in politics, policy, and government.</p></td></table></li>
- <li class="course" data-category="F22 American MWF TR asynch"><table><th><img src="111.png" alt="Pol S 111"></th><td><h4>Pol S 111: Introduction to American Government</h4><p><i><a href="https://www.pols.iastate.edu/directory/dirk-deam/">Prof. Deam</a> &#8226; MWF 9:55&ndash;10:45<br><a href="https://www.pols.iastate.edu/directory/susan-laehn/">Prof. Laehn</a> &#8226; TR 12:40&ndash;1:55<br><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; Online</i></p><p>Learn about how American democracy works, or doesn't work, from its policymaking institutions to the public's political behavior. There are presidential elections, but also so much more!</p></td></table></li>
- <li class="course" data-category="F22 IR Perspectives MWF TR"><table><th><img src="121.png" alt="Pol S 121"></th><td><h4>Pol S 121: Introduction to International Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/richard-mansbach/">Prof. Mansbach</a> &#8226; TR 9:30&ndash;10:45<br><a href="https://www.pols.iastate.edu/directory/yue-ren/">Prof. Ren</a> &#8226; MWF 12:05&ndash;12:55<br><a href="https://www.pols.iastate.edu/directory/ellen-pirro/">Prof. Pirro</a> &#8226; TR 2:10&ndash;3:25</i></p><p>War, globalization, and the national interest drive events in the world today, as they have throughout history. Explore the dynamics underpinning everything from terrorism to international cooperation on climate change. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="F22 Comparative Perspectives MWF"><table><th><img src="125.png" alt="Pol S 125"></th><td><h4>Pol S 125: Democracy and Dictatorship: Introduction to Comparative Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/yue-ren/">Prof. Ren</a> &#8226; MWF 9:55&ndash;10:45<br><a href="https://www.pols.iastate.edu/directory/jonathan-hassid/">Prof. Hassid</a> &#8226; MWF 8:50&ndash;9:40<br><a href="https://www.pols.iastate.edu/directory/yue-ren/">Prof. Ren</a> &#8226; MWF 2:15&ndash;3:05</i></p><p>How do different societies choose their leaders, run their governments, and regulate their economies and societies? This introduction will show you examples and ideas from around the world. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="MWF"><table><th><img src="166.png" alt="Pol S 166X"></th><td><h4>Pol S 166X: Politics Today</h4><p><i><a href="https://www.pols.iastate.edu/directory/robert-urbatsch/">Prof. Urbatsch</a> &#8226; MWF 8:50&ndash;9:40</i></p><p>What do current events tell us about politics more broadly, and what does political science tell us about current events? Come discuss the broad patterns that help explain the news.</p></td></table></li>
- <li class="course" data-category="F22 Law TR"><table><th><img src="235.png" alt="Pol S 235"></th><td><h4>Pol S 235: Introduction to Ethics and Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/susan-laehn/">Prof. Laehn</a> &#8226; TR 12:40&ndash;2:00</i></p><p>Politics implicates so many moral issues: violence, deceit, corruption, civil disobedience, justice, freedom, and more. See what guidance classic and contemporary thinkers have offered on doing right.</p></td></table></li>
- <li class="course" data-category="Policy"><table><th><img src="271.png" alt="Pol S 271"></th><td><h4>Pol S 271: Public Organizations and Leadership</h4><p><i><a href="https://www.pols.iastate.edu/directory/jonathan-hassid/">Prof. Hassid</a> &#8226; TBD</i></p><p>Introductory survey of public governance at the administrative and managerial levels of international, national, state, and local government. Essential issues and competencies involved in efficient, effective, and ethical provision of public goods and services. Relationships inside and across governments, social equity, public-private partnerships, and privatization.</p></td></table></li>
- <li class="course" data-category="F22 TR"><table><th><img src="301.png" alt="Pol S 301"></th><td><h4>Pol S 301: Introduction to Empirical Political Science Research</h4><p><i><a href="https://faculty.sites.iastate.edu/daveamp/">Prof. Peterson</a> &#8226; TR 9:30&ndash;10:45</i></p><p>Human interactions are complicated; how do we make sense of them? Hone your critical-thinking and data-analysis skills while learning about how politics works in the real world.</p></td></table></li>
- <li class="course" data-category="Comparative"><table><th><img src="305.png" alt="Pol S 305"></th><td><h4>Pol S 305: Comparative Political Behavior</h4><p><i><a href="https://www.pols.iastate.edu/directory/amy-erica-smith/">Prof. Smith</a> &#8226; TR 9:30&ndash;10:45</i></p><p>Contested elections. Protests. Political polarization. Threats of secession. Police violence. How ordinary citizens make politics happen, and what does it mean for US and global democracy?</p></td></table></li>
- <li class="course" data-category="American MWF"><table><th><img src="306.png" alt="Pol S 306"></th><td><h4>Pol S 306: Public Opinion and Voting Behavior</h4><p><i><a href="https://www.pols.iastate.edu/directory/robert-urbatsch/">Prof. Urbatsch</a> &#8226; MWF 2:15&ndash;3:05</i></p><p>What factors motivate the public to participate in politics, or cause people to want prefer certain parties, candidates, and policies? This class will look at both what polling can tell us, and sources of information on public attitudes that move beyond polling.</p></td></table></li>
- <li class="course" data-category="American TR"><table><th><img src="310.png" alt="Pol S 310"></th><td><h4>Pol S 310: State and Local Government</h4><p><i><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; TBD</i></p><p>States and local governments have a more direct role in solving many everyday problems of American society than the federal government does. Learn about the distinctive ways of states, counties, and towns, with their unique institutions and patterns of participation.</p></td></table></li>
- <li class="course" data-category="American"><table><th><img src="312.png" alt="Pol S 312"></th><td><h4>Pol S 312: </h4><p><i><a href="">TBD</a> &#8226; TBD</i></p><p></p></td></table></li>
- <li class="course" data-category="Comparative"><table><th><img src="314.png" alt="Pol S 314"></th><td><h4>Pol S 314: </h4><p><i><a href="">TBD</a> &#8226; TBD</i></p></td></table></li>
- <li class="course" data-category="IR"><table><th><img src="315.png" alt="Pol S 315"></th><td><h4><h4>Pol S 315: </h4><p><i><a href="">TBD</a> &#8226; TBD</i></p></td></table></li>
- <li class="course" data-category="F22 American MWF"><table><th><img src="318.png" alt="Pol S 318"></th><td><h4>Pol S 318: Campaigns and Elections</h4><p><i><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; MWF 11:00&ndash;11:50</i></p><p>It's always campaign season in the United States, with elections having consequences for all aspects of society. Get hands-on experience in electoral activities and go behind the scenes in these pivotal events for politics and policy.</p></td></table></li>
- <li class="course" data-category="F22 Law MWF"><table><th><img src="319.png" alt="Pol S 319"></th><td><h4>Pol S 319: Law and Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/kathleen-waggoner/">Prof. Waggoner</a> &#8226; MWF 3:20&ndash;4:10</i></p><p>What are the roles of the judicial system in American politics? How do judges work with the rest of government to establish what the law is?</p></td></table></li>
- <li class="course" data-category="Law TR"><table><th><img src="320.png" alt="Pol S 320"></th><td><h4>Pol S 320: American Judicial Process</h4><p><i><a href="https://www.pols.iastate.edu/directory/kathleen-waggoner/">Prof. Waggoner</a> &#8226; TR 2:10&ndash;3:25</i></p><p>Understanding how courts work is necessary to understand law, criminal justice, and federalism in the United States. This class lays out the most important procedural issues involved, including how courts are bound by previous decisions versus what they do when facing new issues, or how judges craft and enforce their rulings.</p></td></table></li>
- <li class="course" data-category="F22 Law American Diversity TR"><table><th><img src="333.png" alt="Pol S 333"></th><td><h4>Pol S 333: Democracy and Diversity in America</h4><p><i><a href="https://www.pols.iastate.edu/directory/alex-tuckness/">Prof. Tuckness</a> &#8226; TR 3:40&ndash;5:00</i></p><p>How does a democracy work when its people differ in so many attitudes and characteristics, as in the modern United States? Different thinkers have offered different views, which we'll explore in the context of major issues like immigration, affirmative action, multicultural education, religion, and minority representation. Meets U.S. Diversity Requirement.</p></td></table></li>
- <li class="course" data-category="Policy TR"><table><th><img src="335.png" alt="Pol S 335"></th><td><h4>Pol S 335: Science, Technology, and Public Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/dirk-deam/">Prof. Deam</a> &#8226; R 6:10&ndash;9:00 PM</i></p><p>From genetically engineered foods to self-driving cars&mdash;and into outer space&mdash;science and technology are intertwined with political forces. The stories of science policies past and present reveal much about how government, media, and private business in research, development, and the advancement of technology.</p></td></table></li>
- <li class="course" data-category="F22 Comparative Perspectives MWF"><table><th><img src="338.png" alt="Pol S 338X"></th><td><h4>Pol S 338X: Dictatorship</h4><p><i><a href="https://www.pols.iastate.edu/directory/jonathan-hassid/">Prof. Hassid</a> &#8226; MWF 9:55&ndash;10:45</i></p><p>Dictatorial regimes govern huge portions of the world. Where do such regimes come from, and how do they work? Learn about the wide-ranging and colorful world of dictators and despots. Meets International Perspectives requirement.</p></td></table></li>
- <li class="course" data-category="F22 American Diversity Law TR"><table><th><img src="339.png" alt="Pol S 339"></th><td><h4>Pol S 339: Liberty and Law in America</h4><p><i><a href="https://www.pols.iastate.edu/directory/susan-laehn/">Prof. Laehn</a> &#8226; TR 2:10&ndash;3:25</i></p><p>Debates about what it means to be free (and who gets to be free) means have raged throughout American history. Join the conversation as it roves across topics from marijuana, to guns, to speech, to sex. Meets U.S. Diversity Requirement.</p></td></table></li>
- <li class="course" data-category="Comparative Perspectives"><table><th><img src="340.png" alt="Pol S 340"></th><td><h4>Pol S 340: Politics of Developing Areas</h4><p><i><a href="https://www.pols.iastate.edu/directory/scott-feinstein/">Prof. Feinstein</a> &#8226; TBD</i></p><p>Economic and political development as they relate to the political process of developing states. Impact of social and technological change on political systems of developing areas. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="Comparative Perspectives"><table><th><img src="342.png" alt="Pol S 342"></th><td><h4>Pol S 342: Chinese Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/jonathan-hassid/">Prof. Hassid</a> &#8226; TBD</i></p><p>Learn about the history and politics of the world's most populous country, a major player in global development, environmental issues, and international politics. Discover how China grew so quickly, and what the future may bring. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="Comparative Perspectives"><table><th><img src="343.png" alt="Pol S 343"></th><td><h4>Pol S 343: Latin American Government and Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/amy-erica-smith/">Prof. Smith</a> &#8226; TBD</i></p><p>Political institutions, processes, and contemporary issues. Selected countries examined intensively to illustrate generalizations. Role of parties, military, church, human rights, women, environmental issues, interest groups, ideology, and globalization. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="F22 Policy asynch"><table><th><img src="344.png" alt="Pol S 344"></th><td><h4>Pol S 344: Public Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/yu-wang/">Prof. Wang</a> &#8226; Online</i></p><p>Policy shapes outcomes in criminal justice, the environment, social equality, and much else besides. Learn how policymakes set the agenda, and the causes and consequences of their choices.</p></td></table></li>
- <li class="course" data-category="F22 Comparative Perspectives TR"><table><th><img src="346.png" alt="Pol S 346"></th><td><h4>Pol S 346: European Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/ellen-pirro/">Prof. Pirro</a> &#8226; TR 9:30&ndash;10:45</i></p><p>Europe is on the front lines of many political trends, from the transnational cooperation of the European Union to social-welfare states and the turn towards populism. Learn more about how these societies have faced these challenges. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="Comparative Perspectives"><table><th><img src="348.png" alt="Pol S 348"></th><td><h4>Pol S 348: British Government and Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; TBD</i></p><p>The United Kingdom packs a lot of big political questions into one country: democracy and monarchy, terrorism and local control, domestic autonomy vs. international integration. And as the model for other parliaments and systems around the world, it has outside influence and importance. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="Comparative Perspectives"><table><th><img src="349.png" alt="Pol S 349"></th><td><h4>Pol S 349: Politics of Russia and Eastern Europe</h4><p><i><a href="https://www.pols.iastate.edu/directory/scott-feinstein/">Prof. Feinstein</a> &#8226; TBD</i></p><p>Russia looms large in every sense on the world stage, and the nation-states of the former Soviet bloc are key to understanding global politics. Learn about these newsy states of Eurasia, and their vibrant economic, cultural and social variations. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="Comparative Perspectives"><table><th><img src="350.png" alt="Pol S 350"></th><td><h4>Pol S 350: Politics of the Middle East</h4><p><i><a href="https://language.iastate.edu/directory/gabiam/">Prof. Gabiam</a> &#8226; TBD</i></p><p>Get the necessary tools to understand the socio-political landscape of the contemporary Middle East: its colonial past and nationalism, political Islam and the political economy of oil, and ongoing conflict and instability including the tangled interrelationship between Iran, the United States, and other countries of the region. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="IR Perspectives"><table><th><img src="352.png" alt="Pol S 352X"></th><td><h4>Pol S 352X: Migration and Refugees in the 21st Century</h4><p><i><a href="https://language.iastate.edu/directory/gabiam/">Prof. Gabiam</a> &#8226; TBD</i></p><p>The historical, economic, social, political, and environmental factors that explain human mobility in the 21st century. The definition of a “migrant” with special emphasis on refugees (people who have been forcibly displaced across national borders). Ethnographic accounts of current refugee crises and of host state policy toward refugees. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="F22 Diversity Policy MWF MW"><table><th><img src="353.png" alt="Pol S 353"></th><td><h4>Pol S 353: Immigration Policy</h4><p><i><a href="https://language.iastate.edu/directory/gabiam/">Prof. Gabiam</a> &#8226; MW 3:20&ndash;4:35</i></p><p>Immigration policy confronts political threats and economic imperatives. Deciding who gets into the country and how best to integrate those who have come in are hot-button issues around the world; learn how immigrants, refugees, and natives are affected by policy choices. Meets U.S. Diversity Requirement.</p></td></table></li>
- <li class="course" data-category="IR Perspectives"><table><th><img src="354.png" alt="Pol S 354"></th><td><h4>Pol S 354: War and the Politics of Humanitarianism</h4><p><i><a href="https://language.iastate.edu/directory/gabiam/">Prof. Gabiam</a> &#8226; TBD</i></p><p>Humanitarianism as a system of thought and a system of intervention in conflict and post-conflict situations. Role of humanitarian organizations and actors in addressing human suffering caused by conflict or war. Military action as a form of humanitarian intervention. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="F22 IR Perspectives TR"><table><th><img src="355.png" alt="Pol S 355"></th><td><h4>Pol S 355: War and Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/richard-mansbach/">Prof. Mansbach</a> &#8226; TR 12:40&ndash;1:55</i></p><p>War is famously "the continuation of politics by other means," but how do the two relate? How has the recourse to war changed over time, and when is it justified? Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="IR TR"><table><th><img src="356.png" alt="Pol S 356"></th><td><h4>Pol S 356: Theories of International Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/richard-mansbach/">Prof. Mansbach</a> &#8226; TR 12:40&ndash;1:55</i></p><p>Introduction to essential theoretical concepts and approaches, both classical and contemporary on world politics including realism, empiricism, liberalism, and postpositivism; for example, war and conflict, peace and cooperation, political economy, crisis decision-making, systemic theory, dependence and interdependence.</p></td></table></li>
- <li class="course" data-category="IR Policy"><table><th><img src="357.png" alt="Pol S 357"></th><td><h4>Pol S 357: International Security Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/ellen-pirro/">Prof. Pirro</a> &#8226; TBD</i></p><p>Major theoretical approaches in security policy: strategy and deterrence, game theory, bargaining theory, compellence, coercive diplomacy, and crisis diplomacy. Illustration of these approaches through historical and contemporary cases.</p></td></table></li>
- <li class="course" data-category="F22 IR Policy MWF"><table><th><img src="358.png" alt="Pol S 358"></th><td><h4>Pol S 358: United States Foreign Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/james-mccormick/">Prof. McCormick</a> &#8226; MWF 12:05&ndash;12:55</i></p><p>The United States is immersed in world politics whether it wants to be or not. How has it responded in recent decades? Who makes American foreign-policy choices, what values drive them, and how are the choices implemented in practice?</p></td></table></li>
- <li class="course" data-category="IR Policy"><table><th><img src="359.png" alt="Pol S 359"></th><td><h4>Pol S 359: Current Issues in American Foreign Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/james-mccormick/">Prof. McCormick</a> &#8226; TBD</i></p><p>Some issues dominate American foreign affairs. This course will take an in-depth look at some of these, such as how the United States deals with China, the Middle East, arms-control policy, and human-rights concerns, showing how the issues have evolved and the different possible policy choices.</p></td></table></li>
- <li class="course" data-category="F22 TR American"><table><th><img src="360.png" alt="Pol S 360"></th><td><h4>Pol S 360: American Institutions: Congress</h4><p><i><a href="https://www.pols.iastate.edu/directory/mack-shelley/">Prof. Shelley</a> &#8226; 2:10&ndash;3:30</i></p><p>Congress is central to American law and politics.  Explore its inner workings, how its members are selected and work, and the ways that the body develops policy outcomes.</p></td></table></li>
- <li class="course" data-category="American"><table><th><img src="361.png" alt="Pol S 361"></th><td><h4>Pol S 361: American Institutions: The Presidency</h4><p><i><a href="https://www.pols.iastate.edu/directory/dirk-deam/">Prof. Deam</a> &#8226; TBD</i></p><p>The Presidency has a dramatic history, with past chief executives asserting power over, and their personalities into, a wide range of roles and functions. Find out how the American president, and the executive branch more broadly, relates to Congress, the media, and the public.</p></td></table></li>
- <li class="course" data-category="F22 American MWF"><table><th><img src="363.png" alt="Pol S 363"></th><td><h4>Pol S 363: American Institutions: Media</h4><p><i><a href="https://www.pols.iastate.edu/directory/dirk-deam/">Prof. Deam</a> &#8226; MWF 12:05&ndash;12:55</i></p><p>The mass media crucially affects almost every element of American politics, yet it probably barely came up in your high-school civics and government class. Gain insight into how traditional journalism, propaganda, campaign ads influence political outcomes.</p></td></table></li>
- <li class="course" data-category="American"><table><th><img src="364.png" alt="Pol S 364"></th><td><h4>Pol S 364: Political Parties and Interest Groups</h4><p><i><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; TBD</i></p><p>Nature of political parties and interest groups, their relation to each other, and their effects on American politics. Topics include party identification, party organization and mobilization, factionalism, lobbying, campaign contributions and financing, and the effects of special interests on public law.</p></td></table></li>
- <li class="course" data-category="Comparative"><table><th><img src="370.png" alt="Pol S 370"></th><td><h4>Pol S 370: Religion and Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/amy-erica-smith/">Prof. Smith</a> &#8226; TBD</i></p><p>The interaction of religion and politics in the U.S. from both an historical and contemporary perspective, as well as the role of religion in politics internationally.</p></td></table></li>
- <li class="course" data-category="IR"><table><th><img src="381.png" alt="Pol S 381"></th><td><h4>Pol S 381: International Political Economy</h4><p><i><a href="https://www.pols.iastate.edu/directory/robert-urbatsch/">Prof. Urbatsch</a> &#8226; TBD</i></p><p>Politics of international economic interaction. Trade wars and agreements, cross-border finance and multinational corporations, exchange rates and monetary policy, outsourcing, and development under conditions of globalization.</p></td></table></li>
- <li class="course" data-category="Policy"><table><th><img src="383.png" alt="Pol S 383"></th><td><h4>Pol S 383: Environmental Politics and Policies</h4><p><i><a href="https://www.pols.iastate.edu/directory/amy-erica-smith/">Prof. Smith</a> &#8226; TBD</i></p><p>From local water quality to global carbon emissions, the natural environment reflects politics and policy. Let's explore the processes, participants, and institutions involved in environmental controversies and proposals for policy reform, and what they mean for conservation and ecology.</p></td></table></li>
- <li class="course" data-category="American Diversity"><table><th><img src="385.png" alt="Pol S 385"></th><td><h4>Pol S 385: Women in Politics</h4><p><i><a href="https://www.pols.iastate.edu/directory/karen-kedrowski/">Prof. Kedrowski</a> &#8226; TBD</i></p><p>Women have increasingly sought and won power in elected and appointed positions&mdash;find out how and why this matters, with a comparative perspective on contemporary gender-related issues in politics and strategies for change through America's political processes. Meets U.S. Diversity Requirement.</p></td></table></li>
- <li class="course" data-category="F22 Law MWF"><table><th><img src="402.png" alt="Pol S 402"></th><td><h4>Pol S 402: Legal Analysis</h4><p><i><a href="https://www.pols.iastate.edu/directory/kathleen-waggoner/">Prof. Waggoner</a> &#8226; MWF 1:10&ndash;2:00</i></p><p>Law schools and judges expect a certain style of logic and reasoning. Get a jump on law-related careers by learning about the rules of legal analysis used in preparing briefs and adversarial oral arguments.</p></td></table></li>
- <li class="course" data-category="F22 Policy asynch"><table><th><img src="407.png" alt="Pol S 407"></th><td><h4>Pol S 407: Proseminar in Public Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/mack-shelley/">Prof. Shelley</a> &#8226; Online</i></p><p>Dive deep into the study of public policy, including its major theories and writers as well as the methods used to analyze and understand policymaking. How do policies form and evolve?</p></td></table></li>
- <li class="course" data-category="Policy asynch"><table><th><img src="408.png" alt="Pol S 408"></th><td><h4>Pol S 408: Proseminar in Public Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/mack-shelley/">Prof. Shelley</a> &#8226; TBD</i></p><p>The implementation phase of the policy process, primarily within the government sector, with respect to specific programs, rules, or pieces of legislation within a larger policy area, e.g., health, environment, transportation, education, foreign policy.</p></td></table></li>
- <li class="course" data-category=""><table><th><img src="409.png" alt="Pol S 409"></th><td><h4>Pol S 409: Political Game Theory</h4><p><i><a href="https://www.pols.iastate.edu/directory/robert-urbatsch/">Prof. Urbatsch</a> &#8226; TBD</i></p><p>Application of economics to political science in the study of nonmarket decision-making. Behavior of bureaucrats, elected officials, and voters. Market failure, collective action, representative democracies, direct democracies, logrolling, voter paradoxes, and game theory.</p></td></table></li>
- <li class="course" data-category="American"><table><th><img src="413.png" alt="Pol S 413"></th><td><h4>Pol S 413: Intergovernmental Relations</h4><p><i><a href="https://www.pols.iastate.edu/directory/mark-jackson/">Prof. Jackson</a> &#8226; TBD</i></p><p>Theories and practices of the American federal system. Politics and policy making among federal, state, and local governments.</p></td></table></li>
- <li class="course" data-category="Law TR"><table><th><img src="419.png" alt="Pol S 419"></th><td><h4>Pol S 419: The Judiciary</h4><p><i><a href="https://www.pols.iastate.edu/directory/kathleen-waggoner/">Prof. Waggoner</a> &#8226; TBD</i></p><p>What does it take to be a judge? This class explores how judges are chosen and how they interpret laws, including ideological frameworks like originalism and what "judicial activism" means.</p></td></table></li>
- <li class="course" data-category="F22 Law MWF"><table><th><img src="420.png" alt="Pol S 420"></th><td><h4>Pol S 420: Constitutional Law</h4><p><i><a href="https://www.pols.iastate.edu/directory/dirk-deam/">Prof. Deam</a> &#8226; MWF 2:15&ndash;3:05</i></p><p>The interpretation of the United States Constitution develops one legal ruling at a time judicial action. How do judges make these rules, and what do their decisions about Constitutional mean for government and society?</p></td></table></li>
- <li class="course" data-category="Law MWF"><table><th><img src="421.png" alt="Pol S 421"></th><td><h4>Pol S 421: Constitutional Freedoms</h4><p><i><a href="https://www.pols.iastate.edu/directory/dirk-deam/">Prof. Deam</a> &#8226; MWF 2:15&ndash;3:05</i></p><p>The Supreme Court has spent decades interpreting the protections that the Bill of Rights provides against invasions by the federal and state governments. Learn about the most important constitutional provisions and rulings relating to rights regarding religion, speech, privacy, discrimination, and criminal justice.</p></td></table></li>
- <li class="course" data-category="Law"><table><th><img src="422.png" alt="Pol S 422"></th><td><h4>Pol S 422: International Law</h4><p><i><a href="https://www.pols.iastate.edu/directory/yue-ren/">Prof. Ren</a> &#8226; TBD</i></p><p>Legal aspects of international activities: state jurisdiction over territories and subjects, law of the sea, use of force, and judicial settlement of international disputes.</p></td></table></li>
- <li class="course" data-category="Law"><table><th><img src="430.png" alt="Pol S 430"></th><td><h4>Pol S 430: Foundations of Western Political Thought</h4><p><i><a href="https://www.pols.iastate.edu/directory/alex-tuckness/">Prof. Tuckness</a> &#8226; TBD</i></p><p>Ideas from the ancient Greeks to Renaissance shaped the ways that the writers of modern constitutions, and indeed jurists and philosophers today, think about politics and right. Immerse yourself in these texts as they grapple with the biggest ideas of politics, like justice, freedom, virtue, and power.</p></td></table></li>
- <li class="course" data-category="Law"><table><th><img src="431.png" alt="Pol S 431"></th><td><h4>Pol S 431: Modern Political Thought</h4><p><i><a href="https://www.pols.iastate.edu/directory/alex-tuckness/">Prof. Tuckness</a> &#8226; TBD</i></p><p>Study of original texts in political thought ranging from the Reformation to the French Revolution and its aftermath. Topics such as justice, freedom, rights, democracy, toleration, property, power, skepticism, and normative views of international politics.</p></td></table></li>
- <li class="course" data-category="F22 Policy MWF"><table><th><img src="443.png" alt="Pol S 443"></th><td><h4>Pol S 443: Energy Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/yu-wang/">Prof. Wang</a> &#8226; MWF 8:50&ndash;9:40</i></p><p>Energy policy is key to environmental justice and climate change, as well as to a broad swath of the economy: recent controversies over pipelines and blackouts have erupted around the world. Find out how policy connects with energy transitions as technologies and societies change.</p></td></table></li>
- <li class="course" data-category="Comparative Policy"><table><th><img src="444.png" alt="Pol S 444"></th><td><h4>Pol S 444: Comparative Public Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/mack-shelley/">Prof. Shelley</a> &#8226; TBD</i></p><p>How, why and to what effect governments deal with substantive policy problems differently. Environmental factors, ideologies, cultures, domestic policy making processes, and interest groups.</p></td></table></li>
- <li class="course" data-category="Comparative IR Perspectives Policy"><table><th><img src="452.png" alt="Pol S 452"></th><td><h4>Pol S 452: Comparative Foreign Policy</h4><p><i><a href="https://www.pols.iastate.edu/directory/yue-ren/">Prof. Ren</a> &#8226; TBD</i></p><p>The world is full of countries trying to get their way in international relations. Read and talk about how different countries try to solve the problems this poses. Meets International Perspectives Requirement.</p></td></table></li>
- <li class="course" data-category="IR"><table><th><img src="453.png" alt="Pol S 453"></th><td><h4>Pol S 453: International Organization</h4><p><i><a href="https://www.pols.iastate.edu/directory/yue-ren/">Prof. Ren</a> &#8226; TBD</i></p><p>Sources of international order in a variety of substantive areas such as international security, international trade and finance, the environment, and human rights: distribution of power, institutions, international law, and norms.</p></td></table></li>
- <li class="course" data-category="F22 American TR"><table><th><img src="460.png" alt="Pol S 460"></th><td><h4>Pol S 460: American Political Institutions</h4><p><i><a href="https://faculty.sites.iastate.edu/daveamp/">Prof. Peterson</a> &#8226; TR 12:40&ndash;1:55</i></p><p>The mechanics of checks and balances play out in every corner of American government, from the maneuverings of Congress to the creation of independent school boards. Learn more about how institutional designs affect policy and politics in the United States.</p></td></table></li>
-</div> 
- <li class="course" data-category="Policy"><table><th><img src="475.png" alt="Pol S 475"></th><td><h4>Pol S 475: Management in the Public Sector</h4><p><i><a href="https://www.pols.iastate.edu/directory/mark-jackson/">Prof. Jackson</a> &#8226; TBD</i></p><p>Literature and research on organizational behavior and management theory with emphasis on applied aspects of managing contemporary public-sector organizations. Distinctions between public and private organizations, leadership, productivity, employee motivation, organizational structure, and organizational change.</p></td></table></li>
- <li class="course" data-category="Policy"><table><th><img src="477.png" alt="Pol S 477"></th><td><h4>Pol S 477: Government, Business, and Society</h4><p><i><a href="https://www.pols.iastate.edu/directory/kelly-shaw/">Prof. Shaw</a> &#8226; TBD</i></p><p>Diverse perspectives on the changing roles and relationships of business, government, and society for more effective policy decisions on corporate affairs. The changing economy; transformation of workplace and community conditions; consumerism; social responsibilities of businesses; economic policies and regulations; politics in the business-government relationship. </p></td></table></li>
- <li class="course" data-category="Law Policy"><table><th><img src="480.png" alt="Pol S 480"></th><td><h4>Pol S 480: Management in the Public Sector</h4><p><i><a href="https://www.pols.iastate.edu/directory/alex-tuckness/">Prof. Tuckness</a> &#8226; TBD</i></p><p>Choosing policies often requires making trade-offs between multiple visions of the public good. This class explores how policymakers make those choices through theories and applied cases, examining the proper role of religion and ideology in government decisions.</p></td></table></li>
- <li class="course" data-category="Policy"><table><th><img src="487.png" alt="Pol S 487"></th><td><h4>Pol S 487: Electronic Democracy</h4><p><i><a href="https://www.pols.iastate.edu/directory/mark-jackson/">Prof. Jackson</a> &#8226; TBD</i></p><p>Impact of computers and the Internet on politics and policy. Positive and negative effects of information technology (IT) on selected topics such as hacking, cybercrime, cyberterrorism, cyberwarfare, privacy, civic participation, the sense of community, virtual cities, interest group behavior, viral media, campaigns, elections, and voting.</p></td></table></li>
+<ul class="navbar">
+<li>
+<b>Home</b>
+
+  </li>
+<li>
+<a href="research.html">Research</a>
+
+  </li>
+<li>
+<a href="teaching.html">Teaching</a>
+
+</li>
+</ul>
+</div>
+
+<div class="main" id="home">
+
+<hr>
+<p><br></p>
+
+<p align="right">
+
+R. Urbatsch<br>
+
+Professor<br><a href="http://www.pols.iastate.edu">Department of Political Science</a><br><a href="http://www.iastate.edu">Iowa State University</a><br>
+
+503 Ross Hall<br>
+
+527 Farm House Lane<br>
+
+Ames, IA 50011, USA<br>
+
++1 (515) 294-5859<br><br><a href="urbatsch_cv.pdf">CV</a>
+
+</p>
+</div>
+
 </body>
 </html>
+
