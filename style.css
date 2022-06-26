@@ -1,4 +1,7 @@
-body {
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<body>
+<p>body {
    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "Garamond", serif;
    padding: 2.5% 7.5%;
    color: #000033;
@@ -43,3 +46,31 @@ span {
    padding-left: 2em;
    padding-bottom: 1em;
 }
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+ ul.navbar li {
+  padding: 0% 6%;
+  font-size: 125%;
+ }
+
+span {
+   font-size: 120%;
+   font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ ul.navbar li {
+  padding: 0% 4%;
+  font-size: 100%;
+ }
+
+span {
+   font-size: 120%;
+   font-weight: bold;
+  }
+}
+
+</p>
+</body>
+</html>
