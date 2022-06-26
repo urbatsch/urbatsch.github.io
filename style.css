@@ -54,6 +54,7 @@ span {
  }
 
 span {
+   padding-left: 100%;
    font-size: 120%;
    font-weight: bold;
   }
@@ -65,7 +66,8 @@ span {
   font-size: 100%;
  }
 
-span {
+span { 
+   padding-left: 100%;
    font-size: 120%;
    font-weight: bold;
   }
