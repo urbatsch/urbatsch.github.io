@@ -1,7 +1,5 @@
-<html>
-<body>
-<p>body {
-   font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "Garamond", serif;
+body {
+   font-family: "Palatino", "Palatino Linotype", "Book Antiqua", serif;
    padding: 2.5% 7.5%;
    color: #000033;
 }
@@ -71,7 +69,3 @@ span {
    font-weight: bold;
   }
 }
-
-</p>
-</body>
-</html>
