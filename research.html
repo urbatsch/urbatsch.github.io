@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Urbatsch: Research</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+input[type="radio"] {
+ position: absolute;
+ left: -9999px;
+}
+
+.filters {
+ text-align: left;
+ margin-bottom: 1rem;
+}
+ 
+.filters * {
+ display: inline-block;
+}
+ 
+.filters label {
+ padding: 0.5rem 1rem;
+ margin-bottom: 0.25rem;
+ border-radius: 2rem;
+ line-height: normal;
+ cursor: pointer;
+ transition: all 0.1s;
+}
+ 
+.filters label:hover {
+ background: #f1be48;
+ color: #222222;
+}
+
+p.trade,
+p.emigrant,
+p.geography,
+p.nonpol,
+p.measurement {
+ margin-left: 7.5%;
+ margin-right: 7.5%;
+ background: #f8e7a4;
+ padding: 1em 5%;
+}
+
+p.nonpol {
+ margin-bottom: 2.5em;
+}
+
+[value="trade"]:checked ~ .research .publications .publication:not([data-category~="trade"]),
+[value="emigrant"]:checked ~ .research .publications .publication:not([data-category~="emigrant"]),
+[value="nonpol"]:checked ~ .research .publications .publication:not([data-category~="nonpol"]),
+[value="geography"]:checked ~ .research .publications .publication:not([data-category~="geography"]),
+[value="measurement"]:checked ~ .research .publications .publication:not([data-category~="measurement"])  {
+ display: none;
+}
+
+[value="trade"]:not(:checked) ~ .trade,
+[value="emigrant"]:not(:checked) ~ .emigrant,
+[value="nonpol"]:not(:checked) ~ .nonpol,
+[value="geography"]:not(:checked) ~ .geography,
+[value="measurement"]:not(:checked) ~ .measurement {
+ display: none;
+}
+
+[value="trade"]:checked ~ .research .books,
+[value="emigrant"]:checked ~ .research .books,
+[value="geography"]:checked ~ .research .books,
+[value="measurement"]:checked ~ .research .books {
+ display: none;
+}
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="trade"]:checked ~ .filters [for="trade"],
+[value="emigrant"]:checked ~ .filters [for="emigrant"],
+[value="geography"]:checked ~ .filters [for="geography"],
+[value="nonpol"]:checked ~ .filters [for="nonpol"],
+[value="measurement"]:checked ~ .filters [for="measurement"] {
+ background: #600000;
+ color: #ffffff;
+}
+
+ol {
+ padding-left: 0px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="navbar">
+<ul class="navbar">
+<li>
+<a href="index.html">Home</a>
+  </li>
+<li>
+<b>Research</b>
+  </li>
+<li>
+<a href="teaching.html">Teaching</a>
+</li>
+</ul>
+</div>
+<div class="main">
+<hr>
+
+<input type="radio" id="All" name="categories" value="All" checked>
+<input type="radio" id="trade" name="categories" value="trade">
+<input type="radio" id="emigrant" name="categories" value="emigrant">
+<input type="radio" id="geography" name="categories" value="geography">
+<input type="radio" id="nonpol" name="categories" value="nonpol">
+<input type="radio" id="measurement" name="categories" value="measurement">
+
+<ol class="filters">Filter by topic: 
+ <li>
+  <label for="All">All</label>
+ </li>
+ <li>
+  <label for="trade">International Trade</label>
+ </li>
+ <li>
+  <label for="emigrant">Emigrant Politics</label>
+ </li>
+ <li>
+  <label for="geography">Political Geography</label>
+ </li>
+ <li>
+  <label for="nonpol">Extrapolitical Interactions</label>
+ </li>
+ <li>
+  <label for="measurement">Measurement</label>
+ </li>
+</ol>
+<p class="trade">How the public formulates its preferences over foreign-policy issues, especially international economic policy like trade, is an abiding interest. I am especially curious about when and how people incorporate factors divorced from personal economic returns into their attitudes.</p>
+<p class="emigrant">Transnational movements of people have opened up many new international connections in politics. Much research focuses on how migrants interact with and affect their host countries, but many migrants also retain links to their homelands.  This strand of my research looks at how emigrants engage with home-country politics&mdash;and how home-country governments respond to this diaspora political participation.</p>
+<p class="geography">I am interested in how space and distance shape political life, whether through behavior or institutions. This strand of my research has primarily focused on borders&mdash;jurisdictional boundaries&mdash;but how the physical scale of a jurisdiction affects its politics is another recurrent theme.</p>
+<p class="nonpol">Scholars drawn to study politics naturally are interested in the things conventionally thought of as &ldquo;political,&rdquo; so forces and outcomes considered non-political get relatively little attention. But seemingly irrelevant things can hugely influence politics, and politics can have consequences far afield.  Much of my research considers hypotheses that span this divide between politics and everything else.</p>
+<p class="measurement">Translating abstract ideas into observable data is often a challenge, especially in social-scientific settings: figuring out what variables are actually capturing about the real world and designing new measurements to complement or extend existing ones are key components of social-science methodology.  Several of my works take this task on.</p>
+<div class="research">
+<span class="books"> Book </span>
+<dl class="publications">
+<dt class="publication" data-category="nonpol">
+<a href="http://global.oup.com/academic/product/families-values-9780199373604">Families&rsquo; Values</a>
+</dt>
+<dd class="publication" data-category="">Oxford University Press (2014)
+</dd>
+</dl>
+</div>
+<p><br></p>
+<div class="research">
+<span class="articles"> Articles </span>
+<dl class="publications">
+<dt class="publication" data-category="measurement">
+Education and Hastily Generalized Political Views
+<dd class="publication" data-category="measurement">
+<i>International Journal of Public Opinion Research</i>, conditionally accepted
+ <dt class="publication" data-category="">
+<a href="https://www.cambridge.org/core/journals/government-and-opposition/article/partisan-biases-among-the-unemployed/790280078EF5E915C350B3D46FCFDB7B">Partisan Biases among the Unemployed</a> 
+<dd class="publication" data-category="">
+<i>Government & Opposition</i>, forthcoming
+<dt class="publication" data-category="emigrant">
+<a href="https://doi.org/10.1177/13540688221088470">Is&nbsp;Populism Popular Abroad?</a>
+</dt>
+<dd class="publication" data-category="emigrant">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a><br><i>Party Politics</i>, forthcoming   
+</dd>
+<dt class="publication" data-category="">
+<a href="https://doi.org/10.1515/humor-2020-0128">Humor in Supreme Court Oral Arguments</a>
+</dt>
+<dd class="publication" data-category="">
+<i>Humor</i> 35:2 (May 2022), 169&ndash;187
+</dd>
+<dt class="publication" data-category="">
+<a href="https://doi.org/10.1016/j.erss.2021.102283">Are Religious Individuals against Renewables?</a>
+</dt>
+<dd class="publication" data-category="">With <a href="https://www.pols.iastate.edu/directory/yu-wang/">Yu Wang</a><br><i>Energy Research &amp; Social Science</i> 81 (November 2021), 102283
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="https://doi.org/10.1016/j.evolhumbehav.2021.03.008">Physical&nbsp;Formidability and Acceptance of Police Violence</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Evolution and Human Behavior</i> 42:5 (September 2021), 431&ndash;440
+</dd>
+<dt class="publication" data-category="measurement">
+<a href="https://doi.org/10.1177/1065912919900297">Rightward&nbsp;Leanings and Nonstandard Party-Position Perceptions</a>
+</dt>
+<dd class="publication" data-category="measurement">
+<i>Political Research Quarterly</i> 74:1 (March 2021), 166&ndash;181
+</dd>
+<dt class="publication" data-category="emigrant">
+<a href="https://doi.org/10.1057/s41295-020-00225-2">Aversion to Far-Left Parties among Europeans Voting Abroad</a>
+</dt>
+<dd class="publication" data-category="emigrant">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a><br><i>Comparative European Politics</i> 19:1 (February 2021), 117&ndash;138
+</dd>
+<dt class="publication" data-category="trade">
+<a href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/709434">Bean&nbsp;Counters: The Effect of Soy Tariffs on Change in Republican Vote Share between the 2016 and 2018 Elections</a>
+</dt>
+<dd class="publication" data-category="trade">With <a href="http://www.olgachyzh.com/">Olga Chyzh</a><br><i>Journal of Politics</i> 83:1 (January 2021), 415&ndash;419
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="https://link.springer.com/article/10.1007/s11109-019-09540-1">The Social Desirability of Rallying &rsquo;Round the Flag</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Political Behavior</i> 42:4 (December 2020), 1223&ndash;1243
+</dd>
+<dt class="publication" data-category="measurement">
+<a href="https://doi.org/10.1016/j.respol.2020.104058">Do Expert Surveys Underrate Lower-Income Countries?</a>
+</dt>
+<dd class="publication" data-category="measurement">
+<i>Research Policy</i> 49:8 (October 2020), 104058
+</dd>
+<dt class="publication" data-category="emigrant">
+<a href="https://www.sciencedirect.com/science/article/pii/S0743016719301056">Emigrants vs. Rural Politics: Cosmopolitan Outlooks and Electoral Opposition to Agrarian Parties</a>
+</dt>
+<dd class="publication" data-category="emigrant">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a><br><i>Journal of Rural Studies</i> 77 (July 2020), 138&ndash;147
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="https://doi.org/10.1093/poq/nfaa029">Revisiting &ldquo;The First-Daughter Effect&rdquo;</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Public Opinion Quarterly</i> 84:2 (Summer 2020), 523&ndash;537
+</dd>
+<dt class="publication" data-category="emigrant">
+<a href="https://ejpr.onlinelibrary.wiley.com/doi/full/10.1111/1475-6765.12357">European Ruling Parties&rsquo; Electoral Strategies and Diaspora Enfranchisement Policies</a>
+</dt>
+<dd class="publication" data-category="emigrant">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a><br><i>European Journal of Political Research</i> 59:2 (May 2020), 269&ndash;289
+</dd>
+<dt class="publication" data-category="trade">
+<a href="https://doi.org/10.1177/1465116519871619">Trade Connections&rsquo; Effect on European Regions&rsquo; Interest in Brexit</a>
+</dt>
+<dd class="publication" data-category="trade">
+<i>European Union Politics</i> 21:1 (March 2020), 173&ndash;179
+</dd>
+<dt class="publication" data-category="emigrant">
+<a href="https://www.mitpressjournals.org/doi/abs/10.1162/glep_a_00538">Go Means Green: Diasporas&rsquo; Affinity for Ecological Groups</a>
+</dt>
+<dd class="publication" data-category="emigrant">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a><br><i>Global Environmental Politics</i> 20:1 (February 2020), 82&ndash;102
+</dd>
+<dt class="publication" data-category="measurement">
+<a href="https://doi.org/10.1016/j.soscij.2018.04.003">Gun-Shy: Refusal to Answer Survey Questions about Firearm Ownership</a>
+</dt>
+<dd class="publication" data-category="measurement">
+<i>Social Science Journal</i> 56:2 (June 2019), 189&ndash;195
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12544">Good Looks as a Source of Moral Permissiveness</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Social Science Quarterly</i> 100:1 (February 2019), 328&ndash;341
+</dd>
+<dt class="publication" data-category="trade">
+<a href="https://www.tandfonline.com/doi/full/10.1080/03050629.2018.1504780">Immigrant Out-Groups and Voting against Free Trade</a>
+</dt>
+<dd class="publication" data-category="trade">
+<i>International Interactions</i> 44:6 (November 2018), 1065&ndash;1080
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="https://www.sciencedirect.com/science/article/pii/S0261379417305875">Female-Sounding Names and Electoral Performance</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Electoral Studies</i> 55 (October 2018), 54&ndash;61
+</dd>
+<dt class="publication" data-category="geography">
+<a href="https://www.sciencedirect.com/science/article/pii/S0962629817301464">Endogenous Borders and Access to the Sea</a>
+</dt>
+<dd class="publication" data-category="geography">With <a href="https://www.linkedin.com/in/bradlsievers">Brad Sievers</a>
+<br><i>Political Geography</i> 63 (March 2018), 43&ndash;53
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="https://doi.org/10.1016/j.ssresearch.2018.01.006">Things Are Looking Up: Physical Beauty, Social Mobility, and Optimistic Dispositions</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Social Science Research</i> 71 (March 2018), 19&ndash;36
+</dd>
+<dt class="publication" data-category="nonpol geography">
+<a href="http://journals.sagepub.com/doi/full/10.1177/2053168017720590">Youthful Hours: Polling-Place Opening Times Affect Voter Demographics</a>
+</dt>
+<dd class="publication" data-category="nonpol geography">
+<i>Research &amp; Politics</i> 4:3 (July 2017), 1&ndash;7
+</dd>
+<dt class="publication" data-category="geography">
+<a href="http://www.sciencedirect.com/science/article/pii/S0962629817300276">Long-Term Consequences of Ethnic Cleansing in the Polish-German Borderlands</a>
+</dt>
+<dd class="publication" data-category="geography">
+<i>Political Geography</i> 58 (May 2017), 56&ndash;66 
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://www.journals.uchicago.edu/doi/abs/10.1086/688174">Entertainment and the Opportunity Cost of Civic Participation</a>
+</dt>
+<dd class="publication" data-category="nonpol">With <a href="https://bren.ucsb.edu/people/matthew-potoski">Matthew Potoski</a>
+<br><i>Journal of Politics</i> 79:2 (April 2017), 424&ndash;438
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/1467-9477.12079/abstract">Influenza and Voter Turnout</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Scandinavian Political Studies</i> 40:1 (March 2017), 107&ndash;119
+</dd>
+<dt class="publication" data-category="trade geography">
+<a href="http://www.tandfonline.com/doi/full/10.1080/03050629.2016.1140452">Protectionist Executives</a>
+</dt>
+<dd class="publication" data-category="trade geography">
+<i>International Interactions</i> 42:5 (October 2016), 729&ndash;749
+</dd>
+<dt class="publication" data-category="">
+<a href="http://spa.sagepub.com/content/16/3/290">Gender, Partisanship, and Candidate-Selection Mechanisms</a>
+</dt>
+<dd class="publication" data-category="">With <a href="https://www.morningside.edu/about-morningside/directory/valerie-hennings/">Valerie M. Hennings</a><br><i>State Politics &amp; Policy Quarterly</i> 16:3 (September 2016), 290&ndash;312
+</dd>
+<dt class="publication" data-category="">
+<a href="http://www.tandfonline.com/doi/full/10.1080/01402382.2016.1140516">Gendered Electoral Systems in the French <i>S&eacute;nat</i></a>
+</dt>
+<dd class="publication" data-category="">
+<i>West European Politics</i> 39:4 (July 2016), 859&ndash;869
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/disa.12138/abstract">Judgement Days: Social Attitudes after Natural Disasters</a> 
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Disasters</i> 40:1 (January 2016), 26&ndash;44
+</dd>
+<dt class="publication" data-category="">
+<a href="http://link.springer.com/article/10.1007/s11109-014-9290-4">There Can Be Only One (Woman on the Ticket): Gender in Candidate Nominations</a> 
+</dt>
+<dd class="publication" data-category="">With <a href="https://www.morningside.edu/about-morningside/directory/valerie-hennings/">Valerie M. Hennings</a><br><i>Political Behavior</i> 37:3 (September 2015), 749&ndash;766
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://www.mitpressjournals.org/doi/abs/10.1162/JINH_a_00832">The American Public&rsquo;s Attention to Politics in Conflict and Crisis, 1880&ndash;1963</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Journal of Interdisciplinary History</i> 46:2 (Autumn 2015), 225&ndash;244
+</dd>
+<dt class="publication" data-category="">
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/josl.12126/abstract">Movers as Early Adopters of Linguistic Innovation</a>
+</dt>
+<dd class="publication" data-category="">
+<i>Journal of Sociolinguistics</i> 19:3 (June 2015), 372&ndash;390
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://journals.ametsoc.org/doi/abs/10.1175/WCAS-D-15-0001.1">Weather Biases in Public Opinion Surveys</a> 
+</dt>
+<dd class="publication" data-category="nonpol">With <a href="https://bren.ucsb.edu/people/matthew-potoski">Matthew Potoski</a> and <a href="https://www.stat.iastate.edu/people/cindy-yu">Cindy Yu</a><br><i>Weather, Climate, and Society</i> 7:2 (April 2015), 192&ndash;196
+</dd>
+<dt class="publication" data-category="emigrant geography">
+<a href="http://cps.sagepub.com/cgi/reprint/48/4/407.pdf">The Diffusion of Diaspora Enfranchisement Norms: A Multinational Study</a>
+</dt>
+<dd class="publication" data-category="emigrant geography">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a><br><i>Comparative Political Studies</i> 48:4 (March 2015), 407&ndash;437
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://www.maneyonline.com/doi/full/10.1179/0027773814Z.00000000093">Alphabetical Effects on Political Careers</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Names</i> 62:4 (December 2014), 236&ndash;246
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://apr.sagepub.com/content/42/5/841.full.pdf">Time Regulations as Electoral Policy</a> 
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>American Politics Research</i> 42:5 (September 2014), 841&ndash;855
+</dd>
+<dt class="publication" data-category="measurement">
+<a href="http://americanspeech.dukejournals.org/content/89/1/74.full.pdf">Historical Regional Variation in Census Occupation Terms</a> 
+</dt>
+<dd class="publication" data-category="measurement">
+<i>American Speech</i> 89:1 (Spring 2014), 74&ndash;88
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&amp;aid=9235773">Nominal Partisanship: Names as Political Identity Signals</a> 
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>PS: Political Science &amp; Politics</i> 47:2 (April 2014), 463&ndash;467
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://www.sciencedirect.com/science/article/pii/S0165176513000372">Employment Effects of Thanksgiving Timing</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Economics Letters</i> 119:1 (January 2014), 42&ndash;44
+</dd>
+<dt class="publication" data-category="trade measurement">
+<a href="http://link.springer.com/article/10.1007/s11109-012-9206-0">Industries, Occupations, and Trade Policy Preferences</a>
+</dt>
+<dd class="publication" data-category="trade measurement">
+<i>Political Behavior</i> 35:3 (September 2013), 605&ndash;620
+</dd>
+<dt class="publication" data-category="trade">
+<a href="https://journals.cambridge.org/action/displayAbstract?aid=8820669">A Referendum on Trade Theory: Voting on Free Trade in Costa Rica</a>
+</dt>
+<dd class="publication" data-category="trade">
+<i>International Organization</i> 67:1 (January 2013), 197&ndash;214
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://www.springerlink.com/content/0513r13737u13163/" target="_parent">The Paradox of Voting Intelligently</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>Public Choice</i> 150:3&ndash;4 (March 2012), 511&ndash;524
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://journals.cambridge.org/repo_A83B8sDe" target="_parent">Sibling Ideological Influence: A Natural 
+Experiment</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>British Journal of Political Science</i> 41:4 (October 2011), 693&ndash;712
+</dd>
+<dt class="publication" data-category="trade">
+<a href="http://jcr.sagepub.com/cgi/content/abstract/54/3/471">Isolationism and Domestic Politics</a>
+</dt>
+<dd class="publication" data-category="trade">
+<i>Journal of Conflict Resolution</i> 54:3 (June 2010), 471&ndash;492
+</dd>
+<dt class="publication" data-category="nonpol">
+<a href="http://www3.interscience.wiley.com/journal/122229277/abstract">Interdependent Preferences, Militarism, and Child Gender</a>
+</dt>
+<dd class="publication" data-category="nonpol">
+<i>International Studies Quarterly</i> 53:1 (March 2009), 1&ndash;21
+</dd>
+<dt class="publication" data-category="geography">
+<a href="http://dx.doi.org/10.1561/100.00007041" target="_parent">Location and Policy Preferences</a>
+</dt>
+<dd class="publication" data-category="geography">
+<i>Quarterly Journal of Political Science</i> 3:2 (June 2008), 141&ndash;164
+</dd>
+</dl>
+</div>
+<p><br></p>
+<div class="research">
+<span class="progress"> Work&nbsp;in&nbsp;progress </span>
+<dl class="publications">
+<dt class="publication" data-category="geography"><i>Living&nbsp;on the Edges: Borderland Political Economy</i></dt>
+<dt class="publication" data-category="nonpol measurement"><i>The&nbsp;Name Event: United States Political History through Baby Names</i></dt>
+<dt class="publication" data-category="trade"><a href=""></a>Attitudes to Work and International-Economy Preferences</dt>
+<dt class="publication" data-category="geography"><a href=""></a>Geography, Diversity, and the Origins of Domestic Institutions</dt>
+<dt class="publication" data-category="trade nonpol"><a href=""></a>Moral Duties: Normative Sources of Protectionism</dt>
+<dd class="publication" data-category="trade nonpol">With <a href="https://business.baylor.edu/directory/?id=Pamela_Manhart">Pam Manhart</a></dd>
+<dt class="publication" data-category="measurement"><a href=""></a>Multidimensional Treatments in Hypothesis Testing</dt>
+<dt class="publication" data-category="emigrant"><a href=""></a>Diaspora Anti-Transnationalism</dt>
+<dt class="publication" data-category="emigrant"><a href=""></a>The Partisanship of Remittances</dt>
+<dd class="publication" data-category="emigrant">With <a href="http://politicalscience.cos.ucf.edu/people/turcu-anca/">Anca Turcu</a></dd>
+<dt class="publication" data-category=""><a href=""></a>Political Views as a Source of Occupational Choice</dt>
+<dt class="publication" data-category="measurement"><a href=""></a>Analyzing Partisan Factions in Administrative Data</dt> 
+</dl>
+</div>
+</div>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d05213fadcd2466281d39e7b35d5ac0e"}'></script>
+</body>
+</html>
